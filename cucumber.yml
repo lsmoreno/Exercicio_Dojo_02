@@ -1,0 +1,5 @@
+default: --no-source --color --format pretty
+
+diario: -t @daily -t @import
+
+regressao: -t @teste -f html -o html_report.html

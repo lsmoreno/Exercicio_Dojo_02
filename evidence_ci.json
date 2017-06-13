@@ -1,0 +1,187 @@
+[
+  {
+    "uri": "features/Controle_Usuarios.feature",
+    "id": "realizar-controle-de-usuarios-no-site",
+    "keyword": "Funcionalidade",
+    "name": "Realizar controle de usuarios no site",
+    "description": "\tEu como administrador do site\n\tQuero ter todas as permissões necessárias\n\tPara realizar inclusão, alteração e exclusão de usuário no sistema",
+    "line": 5,
+    "comments": [
+      {
+        "value": "#utf-8",
+        "line": 2
+      }
+    ],
+    "elements": [
+      {
+        "keyword": "Contexto",
+        "name": "Usuário acessa a pagina de controle do site",
+        "description": "",
+        "line": 11,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que esteja na tela de controle",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/Controle_Usuarios.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10694238928
+            }
+          }
+        ]
+      },
+      {
+        "id": "realizar-controle-de-usuarios-no-site;incluir-usuario;;2",
+        "keyword": "Esquema do Cenario",
+        "name": "Incluir Usuario",
+        "description": "",
+        "line": 21,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "adicionar um novo \"João\"",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/Controle_Usuarios.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4633043093
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "o mesmo deve ser cadastrado no sistema \"João\"",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/Controle_Usuarios.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15671065522
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Contexto",
+        "name": "Usuário acessa a pagina de controle do site",
+        "description": "",
+        "line": 11,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que esteja na tela de controle",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/Controle_Usuarios.rb:3"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Unable to find css \"#user_name\" (Capybara::ElementNotFound)\n./features/Pages/login_Site.rb:9:in `login_usuario'\n./features/step_definitions/Controle_Usuarios.rb:6:in `/^que esteja na tela de controle$/'\nfeatures/Controle_Usuarios.feature:12:in `Dado que esteja na tela de controle'",
+              "duration": 5156235743
+            }
+          }
+        ]
+      },
+      {
+        "id": "realizar-controle-de-usuarios-no-site;editar-usuario;;2",
+        "keyword": "Esquema do Cenario",
+        "name": "Editar Usuario",
+        "description": "",
+        "line": 31,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@wip",
+            "line": 24
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "editar informações de um \"Jose\"",
+            "line": 31,
+            "match": {
+              "location": "features/step_definitions/Controle_Usuarios.rb:21"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "o mesmo deve ser atualizado no sistema \"Jose\"",
+            "line": 31,
+            "match": {
+              "location": "features/step_definitions/Controle_Usuarios.rb:26"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Contexto",
+        "name": "Usuário acessa a pagina de controle do site",
+        "description": "",
+        "line": 11,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que esteja na tela de controle",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/Controle_Usuarios.rb:3"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Unable to find css \"#user_name\" (Capybara::ElementNotFound)\n./features/Pages/login_Site.rb:9:in `login_usuario'\n./features/step_definitions/Controle_Usuarios.rb:6:in `/^que esteja na tela de controle$/'\nfeatures/Controle_Usuarios.feature:12:in `Dado que esteja na tela de controle'",
+              "duration": 4492213692
+            }
+          }
+        ]
+      },
+      {
+        "id": "realizar-controle-de-usuarios-no-site;excluir-usuario",
+        "keyword": "Cenario",
+        "name": "Excluir Usuario",
+        "description": "",
+        "line": 33,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "excluir um usuario",
+            "line": 34,
+            "match": {
+              "location": "features/step_definitions/Controle_Usuarios.rb:33"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "o mesmo deve ser excluido do sistema",
+            "line": 35,
+            "match": {
+              "location": "features/step_definitions/Controle_Usuarios.rb:38"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
